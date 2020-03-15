@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+
+	<display-name>CourseMaster Project</display-name>
+
+	<servlet>
+		<servlet-name>CourseMasterServlet</servlet-name>
+		<servlet-class>com.yjs3507.courseMaster.CourseMasterServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>CourseMasterServlet</servlet-name>
+		<url-pattern>/main</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.yjs3507.courseMaster.LoginServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>PersonServlet</servlet-name>
+		<servlet-class>com.yjs3507.courseMaster.PersonServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>PersonServlet</servlet-name>
+		<url-pattern>/person</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ClassServlet</servlet-name>
+		<servlet-class>com.yjs3507.courseMaster.ClassServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ClassServlet</servlet-name>
+		<url-pattern>/class</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ClassListServlet</servlet-name>
+		<servlet-class>com.yjs3507.courseMaster.ClassListServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>ClassListServlet</servlet-name>
+		<url-pattern>/classList</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>AttendanceServlet</servlet-name>
+		<servlet-class>com.yjs3507.courseMaster.AttendanceServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AttendanceServlet</servlet-name>
+		<url-pattern>/attendance</url-pattern>
+	</servlet-mapping>
+</web-app>
